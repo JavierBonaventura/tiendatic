@@ -1,16 +1,20 @@
 const fs = require('fs');
 const path = require('path');
+const productsFilePath = path.join(__dirname, "./data/productos.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
-const dataPath = path.join(__dirname, '/../data/groups.json');
-const groups = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+
+
+const groups = "hola"
 
 module.exports = {
     index: (req, res) => {
-        res.render('products/index', { groups });
+       
+        res.render('products/index', { product: products });
     },
 
     electrodomesticos: (req, res) => {
-        res.render("electrodomesticos");
+        res.render("electrodomesticos", { product: products });
     },
     electronica: (req, res) => {
         res.render("electronica");

@@ -1,15 +1,11 @@
 const path = require('path');
+const fs = require("fs");
+const productsFilePath = path.join(__dirname, "./data/productos.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 module.exports = {
     index: (req, res) => {
-        // res.sendFile(path.join(__dirname, '/../views/index.html'));
-        let title = 'Repaso de motores de plantillas --> EJS';
-        let items = [
-            'Instalación y configuración',
-            'Uso de las vistas',
-            'Los tags'
-        ];
-
-        res.render('index');
+        console.log(products)
+        res.render("index", )
     }
 }

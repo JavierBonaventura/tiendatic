@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "nombre_producto": "  Parlante NOBLEX MNT 390",
+        "valor": "$15.500",        
+        "imagen": "http://localhost:3000/imagenes/WhatsApp%20Image%202022-03-09%20at%2015.33.21.jpeg",
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "stock": "Disponible",
+        "descripcion": "",
+        "categoria": "",
+        "subcategoria":""
+
+    },
+    {
+        "id": 2,
+        "nombre_producto": "  Parlante NOBLEX MNT 390",
+        "valor": "$15.500",        
+        "imagen": "http://localhost:3000/imagenes/WhatsApp%20Image%202022-03-09%20at%2015.33.21.jpeg",
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "stock": "Disponible",
+        "descripcion": "",
+        "categoria": "",
+        "subcategoria":""
+    },
+    {
+        "id": 3,
+        "nombre_producto": "  Parlante NOBLEX MNT 390",
+        "valor": "$15.500",        
+        "imagen": "http://localhost:3000/imagenes/WhatsApp%20Image%202022-03-09%20at%2015.33.21.jpeg",
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "stock": "Sin Stock",
+        "descripcion": "",
+        "categoria": "",
+        "subcategoria":""
+    },
+    {
+        "id": 4,
+        "nombre_producto": "  Parlante NOBLEX MNT 390",
+        "valor": "$15.500",        
+        "imagen": "http://localhost:3000/imagenes/WhatsApp%20Image%202022-03-09%20at%2015.33.21.jpeg",
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "stock": "Disponible",
+        "descripcion": "",
+        "categoria": "",
+        "subcategoria":""
+    }
+
+
+]
