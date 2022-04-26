@@ -14,7 +14,8 @@ module.exports = {
     },
 
     electrodomesticos: (req, res) => {
-        res.render("electrodomesticos", { product: products });
+        const soloElectros = products.filter(Electro => Electro.categoria === 'Electrodomesticos')
+        res.render("electrodomesticos", { product: soloElectros });
     },
     electronica: (req, res) => {
         res.render("electronica");
