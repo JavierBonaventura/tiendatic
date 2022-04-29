@@ -1,34 +1,55 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 const productsFilePath = path.join(__dirname, "./data/productos.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
-
-
-const groups = "hola"
+const groups = "hola";
 
 module.exports = {
-    index: (req, res) => {
-       
-        res.render('products/index', { product: products });
-    },
+  index: (req, res) => {
+    res.render("products/index", { product: products });
+  },
 
-    electrodomesticos: (req, res) => {
-        const soloElectros = products.filter(Electro => Electro.categoria === 'Electrodomesticos')
-        res.render("electrodomesticos", { product: soloElectros });
-    },
-    electronica: (req, res) => {
-        res.render("electronica");
-    },
-    muebles: (req, res) => {
-        res.render("muebles");
-    },
+  electrodomesticos: (req, res) => {
+    const soloElectros = products.filter(
+      (Electro) => Electro.categoria === "Electrodomesticos"
+    );
+    res.render("electrodomesticos", { product: soloElectros });
+  },
 
-    detail: (req, res) => {
+  electrodomesticosAudio: (req, res) => {
+    const soloElectros = products.filter(
+      (Electro) => Electro.categoria === "Electrodomesticos"
+    );
+    const soloElectrosAudio = products.filter(
+        (Electro) => Electro.subcategoria === "Audio"
+      );
 
-        // Busco el grupo
-        const group = groups.find(group => group.id == req.params.id);
+    res.render("electrodomesticos", { product: soloElectrosAudio });
+  },
 
-        res.render('products/detail', { group });
+  electronica: (req, res) => {
+    res.render("electronica");
+  },
+  muebles: (req, res) => {
+    res.render("muebles");
+  },
+
+  detail: (req, res) => {
+    res.render("productDetail");
+  },
+
+  getOne: (req, res) => {
+    const paramId = parseInt(req.params.id);
+    const product = products.find(
+      (productElement) => productElement.id === paramId
+    );
+
+    if (product != null) {
+      res.render("productDetail", { product });
+    } else {
+      res.status(404).json({ msg: "No esta el producto" });
     }
-}
+  },
+  
+};

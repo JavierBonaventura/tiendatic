@@ -1,0 +1,57 @@
+<%- include('./partials/head') %>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main>
+
+    
+  
+    
+
+  
+ 
+
+  <div class="b-example-divider py-4"></div>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border shadow-lg">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="http://localhost:3000/imagenes/WhatsApp Image 2022-03-09 at 15.33.21.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><%- product.nombre_producto %></h1>
+        <br>
+        <br>
+        <br>
+        <p class="lead"><%- product.descripcion %></p>
+        <br>
+    
+        <h1 class="display-5 fw-bold lh-1 mb-3"><%- product.valor %></h1>
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            
+         <a href="/">
+         <button type="button"  href="/" class="btn btn-primary btn-lg px-4 me-md-2">Volver</button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      
+  
+
+</body>
+
+   
+<%- include('./partials/footer') %>
+</main>
+</html>

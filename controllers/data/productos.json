@@ -9,9 +9,9 @@
         "imagen3": "",
         "imagen4": "",
         "stock": "Disponible",
-        "descripcion": "",
+        "descripcion": "Noblex MNT390 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.Versátil y funcional Disfrutar de todos los sonidos- graves, medios y agudos- con alta fidelidad y una excelente calidad es posible con este parlante de tipo woofer, tweeter, subwoofer, incluso cuando subas el volumen.         Olvidate del amplificador        Al ser activo solo necesitarás conectarlo a la fuente de sonido y el mismo equipo se encargará de amplificar y reproducir: ganarás practicidad y espacio, ya que además requiere menos cableado que uno pasivo. Es la solución más conveniente si querés producir música en tu casa o en un estudio, y también para DJs.",
         "categoria": "Electrodomesticos",
-        "subcategoria":""
+        "subcategoria":"Audio"
 
     },
     {
@@ -26,7 +26,7 @@
         "stock": "Disponible",
         "descripcion": "",
         "categoria": "Electrodomesticos",
-        "subcategoria":"Electro"
+        "subcategoria":"Audio"
     },
     {
         "id": 3,
@@ -39,8 +39,8 @@
         "imagen4": "",
         "stock": "Sin Stock",
         "descripcion": "",
-        "categoria": "",
-        "subcategoria":""
+        "categoria": "Electrodomesticos",
+        "subcategoria":"Audio"
     },
     {
         "id": 4,
@@ -53,8 +53,8 @@
         "imagen4": "",
         "stock": "Disponible",
         "descripcion": "",
-        "categoria": "",
-        "subcategoria":""
+        "categoria": "Electrodomesticos",
+        "subcategoria":"Audio"
     }
 
 

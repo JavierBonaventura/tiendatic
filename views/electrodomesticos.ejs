@@ -87,11 +87,11 @@
 <!--Main layout-->
 <main style="margin-top: 58px">
   <div class="container pt-4">
-    <h1>Electrodomesticos</h1>
+    <h1>ELECTRODOMESTICOS</h1>
  <!-- Section-->
-<section class="py-5 ">
- <div class="container px-4 px-lg-5 mt-5">
-     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+<section class=" ">
+ <div class="container px-4  mt-5">
+     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 d-flex justify-content-start">
         
        <% for (let i=0; i < product.length; i++) { %>
        <div class="col mb-5">
@@ -109,7 +109,7 @@
                  </div>
                  <!-- Product actions-->
                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                     <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Detalle</a></div>
+                     <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./product/<%- product[i].id %>">Detalle</a></div>
                  </div>
              </div>
          </div>

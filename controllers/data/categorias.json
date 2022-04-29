@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Audio"
+
+    },
+    {
+        "id": 2,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Cocinas"
+
+    },
+    {
+        "id": 3,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Secarropas"
+
+    },
+    {
+        "id": 4,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Lavarropas"
+
+    },
+    {
+        "id": 5,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Estufas"
+
+    },
+    {
+        "id": 6,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Termotanques"
+
+    },
+    {
+        "id": 7,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Horno"
+
+    },
+    {
+        "id": 9,
+        "nombreCategoria": "Electrodomesticos",
+        "nombreSubcategoria":"Microondas"
+
+    }
+
+
+
+]
