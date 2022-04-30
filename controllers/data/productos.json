@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "nombre_producto": "  Parlante NOBLEX MNT 390",
+        "nombre_producto": "  Parlante NOBLEX MNT 670",
         "valor": "$15.500",        
-        "imagen": "http://localhost:3000/imagenes/WhatsApp%20Image%202022-03-09%20at%2015.33.21.jpeg",
+        "imagen": "http://localhost:3000/imagenes/ab071f7a054a2d5ce73440b8c907.jpg",
         "imagen1": "",
         "imagen2": "",
         "imagen3": "",
         "imagen4": "",
         "stock": "Disponible",
-        "descripcion": "Noblex MNT390 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.Versátil y funcional Disfrutar de todos los sonidos- graves, medios y agudos- con alta fidelidad y una excelente calidad es posible con este parlante de tipo woofer, tweeter, subwoofer, incluso cuando subas el volumen.         Olvidate del amplificador        Al ser activo solo necesitarás conectarlo a la fuente de sonido y el mismo equipo se encargará de amplificar y reproducir: ganarás practicidad y espacio, ya que además requiere menos cableado que uno pasivo. Es la solución más conveniente si querés producir música en tu casa o en un estudio, y también para DJs.",
+        "descripcion": "Noblex MNT670 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.Versátil y funcional Disfrutar de todos los sonidos- graves, medios y agudos- con alta fidelidad y una excelente calidad es posible con este parlante de tipo woofer, tweeter, subwoofer, incluso cuando subas el volumen.         Olvidate del amplificador        Al ser activo solo necesitarás conectarlo a la fuente de sonido y el mismo equipo se encargará de amplificar y reproducir: ganarás practicidad y espacio, ya que además requiere menos cableado que uno pasivo. Es la solución más conveniente si querés producir música en tu casa o en un estudio, y también para DJs.",
         "categoria": "Electrodomesticos",
-        "subcategoria":"Audio"
+        "subcategoria":""
 
     },
     {
@@ -26,7 +26,7 @@
         "stock": "Disponible",
         "descripcion": "",
         "categoria": "Electrodomesticos",
-        "subcategoria":"Audio"
+        "subcategoria":"Cocinas"
     },
     {
         "id": 3,
@@ -40,7 +40,7 @@
         "stock": "Sin Stock",
         "descripcion": "",
         "categoria": "Electrodomesticos",
-        "subcategoria":"Audio"
+        "subcategoria":"Secarropas"
     },
     {
         "id": 4,
@@ -55,7 +55,21 @@
         "descripcion": "",
         "categoria": "Electrodomesticos",
         "subcategoria":"Audio"
-    }
+    },
+    {
+        "id": 5,
+        "nombre_producto": "  Parlante NOBLEX MNT 670",
+        "valor": "$15.500",        
+        "imagen": "http://localhost:3000/imagenes/ab071f7a054a2d5ce73440b8c907.jpg",
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "stock": "Disponible",
+        "descripcion": "Noblex MNT670 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.Versátil y funcional Disfrutar de todos los sonidos- graves, medios y agudos- con alta fidelidad y una excelente calidad es posible con este parlante de tipo woofer, tweeter, subwoofer, incluso cuando subas el volumen.         Olvidate del amplificador        Al ser activo solo necesitarás conectarlo a la fuente de sonido y el mismo equipo se encargará de amplificar y reproducir: ganarás practicidad y espacio, ya que además requiere menos cableado que uno pasivo. Es la solución más conveniente si querés producir música en tu casa o en un estudio, y también para DJs.",
+        "categoria": "Electrodomesticos",
+        "subcategoria":"Audio"
 
+    }
 
 ]
