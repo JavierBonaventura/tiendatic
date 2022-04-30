@@ -7,5 +7,8 @@ module.exports = {
     index: (req, res) => {
         console.log(products)
         res.render("index", )
-    }
+    },
+    quienesSomos: (req, res) => {
+        res.render("quienesSomos");
+      },
 }

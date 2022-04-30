@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/productsController');
 
-router.get('/', controller.electrodomesticos);
+router.get('/', controller.productos);
 router.get('/electrodomesticos', controller.electrodomesticos);
 router.get('/electrodomesticos/audio', controller.electrodomesticosAudio);
 router.get('/electrodomesticos/cocinas', controller.electrodomesticosCocinas);
@@ -19,6 +19,18 @@ router.get('/electronica/autosrc', controller.electronicaAutosRc);
 router.get('/electronica/helicopterosrc', controller.electronicaHelicopterosRc);
 router.get('/electronica/smarttv', controller.electronicaSmartTv);
 router.get('/muebles', controller.muebles);
+router.get('/muebles/despensero', controller.mueblesDespensero);
+router.get('/muebles/mesasillas', controller.mueblesMesaSillas);
+router.get('/muebles/placards', controller.mueblesPlacards);
+router.get('/muebles/mueblesdecocina', controller.mueblesDeCocina);
+router.get('/muebles/racktv', controller.mueblesRackTv);
+router.get('/muebles/camas', controller.mueblescamas);
+router.get('/muebles/colchones', controller.mueblesColchones);
+
+
+
+
+
 router.get('/detail', controller.detail);
 router.get("/product/:id", controller.getOne);
 router.get("/product/electrodomesticos/:id", controller.getOne);

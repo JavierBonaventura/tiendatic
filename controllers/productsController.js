@@ -10,6 +10,11 @@ module.exports = {
     res.render("products/index", { product: products });
   },
 
+  productos: (req, res) => {
+    res.render("productos");
+  },
+  
+
   electrodomesticos: (req, res) => {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
@@ -21,8 +26,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosAudio = products.filter(
-        (Electro) => Electro.subcategoria === "Audio"
+    const soloElectrosAudio = soloElectros.filter(
+        (Audio) => Audio.subcategoria === "Audio"
       );
 
     res.render("electrodomesticos", { product: soloElectrosAudio });
@@ -32,8 +37,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosCocinas = products.filter(
-        (Electro) => Electro.subcategoria === "Cocinas"
+    const soloElectrosCocinas = soloElectros.filter(
+        (Cocinas) => Cocinas.subcategoria === "Cocinas"
       );
 
     res.render("electrodomesticos", { product: soloElectrosCocinas });
@@ -43,8 +48,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosSecarropas = products.filter(
-        (Electro) => Electro.subcategoria === "Secarropas"
+    const soloElectrosSecarropas = soloElectros.filter(
+        (Secarropas) => Secarropas.subcategoria === "Secarropas"
       );
 
     res.render("electrodomesticos", { product: soloElectrosSecarropas });
@@ -54,8 +59,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosLavarropas = products.filter(
-        (Electro) => Electro.subcategoria === "Lavarroas"
+    const soloElectrosLavarropas = soloElectros.filter(
+        (Lavarroas) => Lavarroas.subcategoria === "Lavarroas"
       );
 
     res.render("electrodomesticos", { product: soloElectrosLavarropas });
@@ -65,8 +70,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosEstufas = products.filter(
-        (Electro) => Electro.subcategoria === "Estufas"
+    const soloElectrosEstufas = soloElectros.filter(
+        (Estufas) => Estufas.subcategoria === "Estufas"
       );
 
     res.render("electrodomesticos", { product: soloElectrosEstufas });
@@ -76,8 +81,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosTermotanques = products.filter(
-        (Electro) => Electro.subcategoria === "Termotanques"
+    const soloElectrosTermotanques = soloElectros.filter(
+        (Termotanques) => Termotanques.subcategoria === "Termotanques"
       );
 
     res.render("electrodomesticos", { product: soloElectrosTermotanques });
@@ -87,8 +92,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosHornos = products.filter(
-        (Electro) => Electro.subcategoria === "Hornos"
+    const soloElectrosHornos = soloElectros.filter(
+        (Hornos) => Hornos.subcategoria === "Hornos"
       );
 
     res.render("electrodomesticos", { product: soloElectrosHornos });
@@ -98,8 +103,8 @@ module.exports = {
     const soloElectros = products.filter(
       (Electro) => Electro.categoria === "Electrodomesticos"
     );
-    const soloElectrosHMicroondas = products.filter(
-        (Electro) => Electro.subcategoria === "Microondas"
+    const soloElectrosHMicroondas = soloElectros.filter(
+        (Microondas) => Microondas.subcategoria === "Microondas"
       );
 
     res.render("electrodomesticos", { product: soloElectrosHMicroondas });
@@ -117,8 +122,8 @@ module.exports = {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
     );
-    const soloElectroTablets = products.filter(
-        (Electro) => Electro.subcategoria === "Tablets"
+    const soloElectroTablets = soloElectronica.filter(
+        (Tablets) => Tablets.subcategoria === "Tablets"
       );
 
     res.render("electronica", { product: soloElectroTablets });
@@ -129,8 +134,8 @@ module.exports = {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
     );
-    const soloElectroNotebooks = products.filter(
-        (Electro) => Electro.subcategoria === "Notebooks"
+    const soloElectroNotebooks = soloElectronica.filter(
+        (Notebooks) => Notebooks.subcategoria === "Notebooks"
       );
 
     res.render("electronica", { product: soloElectroNotebooks });
@@ -140,8 +145,8 @@ module.exports = {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
     );
-    const soloElectroAutosRc = products.filter(
-        (Electro) => Electro.subcategoria === "AutosRc"
+    const soloElectroAutosRc = soloElectronica.filter(
+        (AutosRc) => AutosRc.subcategoria === "AutosRc"
       );
 
     res.render("electronica", { product: soloElectroAutosRc });
@@ -151,8 +156,8 @@ module.exports = {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
     );
-    const soloElectroHelicopterosRc = products.filter(
-        (Electro) => Electro.subcategoria === "HelicopertosRc"
+    const soloElectroHelicopterosRc = soloElectronica.filter(
+        (HelicopertosRc) => HelicopertosRc.subcategoria === "HelicopertosRc"
       );
 
     res.render("electronica", { product: soloElectroHelicopterosRc });
@@ -162,8 +167,8 @@ module.exports = {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
     );
-    const soloElectroSmartTv = products.filter(
-        (Electro) => Electro.subcategoria === "SmartTv"
+    const soloElectroSmartTv = soloElectronica.filter(
+        (SmartTv) => SmartTv.subcategoria === "SmartTv"
       );
 
     res.render("electronica", { product: soloElectroSmartTv });
@@ -177,9 +182,96 @@ module.exports = {
     res.render("muebles", { product: soloMuebles });
   },
 
+
+
+
+
+  mueblesDespensero: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesDespensero = soloMuebles.filter(
+        (Despensero) => Despensero.subcategoria === "Despensero"
+      );
+
+    res.render("muebles", { product: soloMueblesDespensero });
+  },
+
+  mueblesMesaSillas: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesMesaSillas = soloMuebles.filter(
+        (MesaSillas) => MesaSillas.subcategoria === "MesaSillas"
+      );
+
+    res.render("muebles", { product: soloMueblesMesaSillas });
+  },
+
+  mueblesPlacards: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesPlacards = soloMuebles.filter(
+        (Placards) => Placards.subcategoria === "Placards"
+      );
+
+    res.render("muebles", { product: soloMueblesPlacards });
+  },
+
+
+  mueblesDeCocina: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesDeCocina = soloMuebles.filter(
+        (DeCocina) => DeCocina.subcategoria === "DeCocina"
+      );
+
+    res.render("muebles", { product: soloMueblesDeCocina });
+  },
+
+
+
+  mueblesRackTv: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesRackTv = soloMuebles.filter(
+        (RackTv) => RackTv.subcategoria === "RackTv"
+      );
+
+    res.render("muebles", { product: soloMueblesRackTv });
+  },
+
+  mueblescamas: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesCamas = soloMuebles.filter(
+        (Camas) => Camas.subcategoria === "Camas"
+      );
+      soloMueblesCamas
+    res.render("muebles", { product: soloMueblesCamas });
+  },
+
+
+  mueblesColchones: (req, res) => {
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    const soloMueblesColchones = soloMuebles.filter(
+        (Colchones) => Colchones.subcategoria === "Colchones"
+      );
+
+    res.render("muebles", { product: soloMueblesColchones });
+  },
+
   detail: (req, res) => {
     res.render("productDetail");
   },
+
+
 
   getOne: (req, res) => {
     const paramId = parseInt(req.params.id);
