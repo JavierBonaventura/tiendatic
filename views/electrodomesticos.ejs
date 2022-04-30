@@ -1,5 +1,6 @@
 <%- include('./partials/head') %>
 
+
   <body>
 
     <%- include('./partials/header') %>
@@ -12,11 +13,12 @@
 
 
       <header>
+
         <!-- Sidebar -->
         <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
           <div class="position-sticky">
             <div class="list-group list-group-flush mx-3 mt-4">
-              <div class="p-3 mb-2 bg-dark text-white">Categorias</div>
+              <div class="p-3 mb-2 bg-dark text-white">ELECTRODOMESTICOS</div>
               <a href="/productos/electrodomesticos/audio" class="list-group-item list-group-item-action py-2 ripple ">
                 <i class="fas fa-chart-area fa-fw me-3"></i><span>Audio</span>
               </a>
@@ -48,10 +50,36 @@
                   class="fas fa-money-bill fa-fw me-3"></i><span></span></a>
             </div>
           </div>
+
+
+          <div class="list-group list-group-flush mx-3 mt-4">
+            <a href="/productos/electronica" class="text-decoration-none p-3 mb-2 bg-dark text-white">
+              ELECTRONICA
+            </a>
+            <a href="/productos/muebles" class="text-decoration-none p-3 mb-2 bg-dark text-white">
+              MUEBLES
+            </a>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </nav>
-
       </header>
-
+ 
 
       <!--Main layout-->
       <main style="margin-top: 18px">
@@ -94,7 +122,8 @@
               </div>
             </div>
           </section>
+      
         </div>
       </main>
-
+      <%- include('./partials/footer') %>
       <!--Main layout-->

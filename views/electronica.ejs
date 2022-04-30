@@ -1,19 +1,100 @@
 <%- include('./partials/head') %>
 
-<body>
+  <body>
 
     <%- include('./partials/header') %>
 
-    <main>
-
-       
-        <%- include('./partials/footer') %>
-    </main>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="/css/style.css">
 
 
-    <script src="/script/bootstrap.bundle.min.js"></script>
 
 
-</body>
 
-</html>
+      <header>
+        <!-- Sidebar -->
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+
+          <div class="list-group list-group-flush mx-3 mt-4">
+            <a href="/productos/electrodomesticos" class="text-decoration-none p-3 mb-2 bg-dark text-white">
+              ELECTRODOMESTICOS
+            </a>
+
+
+
+
+            <div class="p-3 mb-2 bg-dark text-white">ELECTRONICA</div>
+            <a href="/productos/electronica/tablets" class="list-group-item list-group-item-action py-2 ripple ">
+              <i class="fas fa-chart-area fa-fw me-3"></i><span>Tablets</span>
+            </a>
+            <a href="/productos/electronica/notebooks"
+              class="list-group-item list-group-item-action py-2 ripple"><i
+                class="fas fa-lock fa-fw me-3"></i><span>Noteboks</span></a>
+            <a href="/productos/electronica/autosrc" class="list-group-item list-group-item-action py-2 ripple"><i
+                class="fas fa-chart-line fa-fw me-3"></i><span>Autos RC</span></a>
+            <a href="/productos/electronica/helicopterosrc"
+              class="list-group-item list-group-item-action py-2 ripple"><i
+                class="fas fa-chart-line fa-fw me-3"></i><span>Helicopteros RC</span></a>
+                <a href="/productos/electronica/smarttv"
+                class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-chart-line fa-fw me-3"></i><span>Smart TV</span></a>
+
+
+
+
+
+
+            <a href="/productos/muebles" class="text-decoration-none p-3 mb-2 bg-dark text-white">
+              MUEBLES
+            </a>
+          </div>
+        </nav>
+
+      </header>
+
+
+      <!--Main layout-->
+      <main style="margin-top: 18px">
+        <div class="container pt-4">
+          <h1>ELECTRONICA</h1>
+          <h2>
+            <%- product[0].subcategoria %>
+          </h2>
+          <!-- Section-->
+          <section class=" ">
+            <div class="container px-4  mt-5">
+              <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 d-flex justify-content-start">
+
+                <% for (let i=0; i < product.length; i++) { %>
+                  <div class="col mb-5">
+                    <div class="card h-100 border border-secondary">
+                      <!-- Product image-->
+                      <img class="card-img-top rounded" src="<%- product[i].imagen %>" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                        <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">
+                            <%- product[i].nombre_producto %>
+                          </h5>
+                          <!-- Product price-->
+                          <%- product[i].valor %>
+                            <%- product[i].stock %>
+                        </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                            href="http://localhost:3000/productos/product/<%- product[i].id %>">Detalle</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <% } %>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%- include('./partials/footer') %>
+      <!--Main layout-->

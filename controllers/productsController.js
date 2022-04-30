@@ -106,10 +106,75 @@ module.exports = {
   },
 
   electronica: (req, res) => {
-    res.render("electronica");
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    res.render("electronica", { product: soloElectronica });
   },
+
+
+  electronicaTablets: (req, res) => {
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    const soloElectroTablets = products.filter(
+        (Electro) => Electro.subcategoria === "Tablets"
+      );
+
+    res.render("electronica", { product: soloElectroTablets });
+  },
+
+
+  electronicaNotebooks: (req, res) => {
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    const soloElectroNotebooks = products.filter(
+        (Electro) => Electro.subcategoria === "Notebooks"
+      );
+
+    res.render("electronica", { product: soloElectroNotebooks });
+  },
+
+  electronicaAutosRc: (req, res) => {
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    const soloElectroAutosRc = products.filter(
+        (Electro) => Electro.subcategoria === "AutosRc"
+      );
+
+    res.render("electronica", { product: soloElectroAutosRc });
+  },
+
+  electronicaHelicopterosRc: (req, res) => {
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    const soloElectroHelicopterosRc = products.filter(
+        (Electro) => Electro.subcategoria === "HelicopertosRc"
+      );
+
+    res.render("electronica", { product: soloElectroHelicopterosRc });
+  },
+
+  electronicaSmartTv: (req, res) => {
+    const soloElectronica = products.filter(
+      (Electro) => Electro.categoria === "Electronica"
+    );
+    const soloElectroSmartTv = products.filter(
+        (Electro) => Electro.subcategoria === "SmartTv"
+      );
+
+    res.render("electronica", { product: soloElectroSmartTv });
+  },
+
+
   muebles: (req, res) => {
-    res.render("muebles");
+    const soloMuebles = products.filter(
+      (Muebles) => Muebles.categoria === "Muebles"
+    );
+    res.render("muebles", { product: soloMuebles });
   },
 
   detail: (req, res) => {

@@ -13,6 +13,11 @@ router.get('/electrodomesticos/Termotanques', controller.electrodomesticosTermot
 router.get('/electrodomesticos/Hornos', controller.electrodomesticosHornos);
 router.get('/electrodomesticos/Microondas', controller.electrodomesticosMicroondas);
 router.get('/electronica', controller.electronica);
+router.get('/electronica/tablets', controller.electronicaTablets);
+router.get('/electronica/notebooks', controller.electronicaNotebooks);
+router.get('/electronica/autosrc', controller.electronicaAutosRc);
+router.get('/electronica/helicopterosrc', controller.electronicaHelicopterosRc);
+router.get('/electronica/smarttv', controller.electronicaSmartTv);
 router.get('/muebles', controller.muebles);
 router.get('/detail', controller.detail);
 router.get("/product/:id", controller.getOne);
