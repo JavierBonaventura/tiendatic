@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`eshop app listening on port ${port}`)
-})
+
+
+app.listen((process.env.PORT || 5000), function(){
+  console.log('listening on *:5000');
+});
