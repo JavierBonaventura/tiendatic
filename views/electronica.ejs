@@ -64,7 +64,7 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <% for (let i=0; i < product.length; i++) { %>
                   <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
                       <img src="/imagenes/<%-product[i].imagen %>"class="bd-placeholder-img card-img-top" width="100%" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
           
                       <div class="card-body">
@@ -76,7 +76,7 @@
                                 <%- product[i].nombre_producto %>
                               </h4>
                               <!-- Product price-->
-                              <%- product[i].valor %>
+                              <h4>  <%- product[i].valor %></h4>
                                 <%- product[i].stock %>
                             </div>
                           </div>
@@ -100,3 +100,6 @@
       <%- include('./partials/footer') %>
       <!--Main layout-->
 
+
+
+      
