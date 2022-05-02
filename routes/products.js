@@ -11,6 +11,7 @@ router.get('/electrodomesticos/Lavarropas', controller.electrodomesticosLavarrop
 router.get('/electrodomesticos/Estufas', controller.electrodomesticosEstufas);
 router.get('/electrodomesticos/Termotanques', controller.electrodomesticosTermotanques);
 router.get('/electrodomesticos/Hornos', controller.electrodomesticosHornos);
+router.get('/electrodomesticos/aires', controller.electrodomesticosAires);
 router.get('/electrodomesticos/Microondas', controller.electrodomesticosMicroondas);
 router.get('/electronica', controller.electronica);
 router.get('/electronica/tablets', controller.electronicaTablets);

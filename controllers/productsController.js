@@ -110,6 +110,19 @@ module.exports = {
     res.render("electrodomesticos", { product: soloElectrosHMicroondas });
   },
 
+  electrodomesticosAires: (req, res) => {
+    const soloElectros = products.filter(
+      (Electro) => Electro.categoria === "Electrodomesticos"
+    );
+    const soloElectrosAires = soloElectros.filter(
+        (Aires) => Aires.subcategoria === "Aires"
+      );
+
+    res.render("electrodomesticos", { product: soloElectrosAires });
+  },
+
+
+
   electronica: (req, res) => {
     const soloElectronica = products.filter(
       (Electro) => Electro.categoria === "Electronica"
