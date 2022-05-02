@@ -61,31 +61,31 @@
             <%- product[0].subcategoria %>
           </h2>
           <!-- Section-->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <section class=" ">
+            <div class="container px-4  mt-5">
+              <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 d-flex justify-content-start">
+
                 <% for (let i=0; i < product.length; i++) { %>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <img src="/imagenes/<%-product[i].imagen %>"class="bd-placeholder-img card-img-top" width="100%" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
-          
-                      <div class="card-body">
+                  <div class="col mb-5">
+                    <div class="card h-100 border border-secondary">
+                      <!-- Product image-->
+                      <img class="" src="/imagenes/<%-product[i].imagen %>" alt="..." width="100%" />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
                         <div class="text-center">
-                          <div class="card-body p-4">
-                            <div class="text-center">
-                              <!-- Product name-->
-                              <h4 class="fw-bolder">
-                                <%- product[i].nombre_producto %>
-                              </h4>
-                              <!-- Product price-->
-                              <%- product[i].valor %>
-                                <%- product[i].stock %>
-                            </div>
-                          </div>
-                                         <!-- Product actions-->
-                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-primary mt-auto"
-                            href="/productos/product/<%- product[i].id %>">Detalle</a></div>
-                      </div>
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">
+                            <%- product[i].nombre_producto %>
+                          </h5>
+                          <!-- Product price-->
+                          <%- product[i].valor %>
+                            <%- product[i].stock %>
                         </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                            href="/productos/product/<%- product[i].id %>">Detalle</a></div>
                       </div>
                     </div>
                   </div>
@@ -93,10 +93,9 @@
 
               </div>
             </div>
-   
+          </section>
         </div>
       </main>
 
       <%- include('./partials/footer') %>
       <!--Main layout-->
-
